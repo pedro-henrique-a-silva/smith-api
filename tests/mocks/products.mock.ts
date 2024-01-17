@@ -50,22 +50,9 @@ const allProductsFromDB = [
   }
 ]
 
-const allProductsGroupedFromDB = [
-  {
-    productIds: [1, 2]
-  },
-  {
-    productIds: [3, 4]
-  },
-  {
-    productIds: [5]
-  }
-]
-
 export default {
   productBodyCreatePost,
   validProductFromDB,
   validProductFromService,
   allProductsFromDB,
-  allProductsGroupedFromDB
 }
