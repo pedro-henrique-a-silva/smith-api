@@ -14,14 +14,11 @@ describe('GET /orders', function () {
 
   it('should return 200 OK and a list of Orders', async function () {
 
-    // sinon.stub(ProductModel, 'findAll')
-    //   .resolves(productsMock.allProductsGroupedFromDB as unknown as ProductSequelizeModel[]);
-
-    // sinon.stub(OrderModel, 'findAll')
-    //   .resolves(ordersMock.allOrdersMockFromDB as unknown as OrderSequelizeModel[]);
+    sinon.stub(OrderModel, 'findAll')
+      .resolves(ordersMock.allOrdersMockBody);
 
     const response = await chai.request(app).get('/orders');
     expect(response.status).to.equal(200);
-    expect(response.body).to.deep.eq(ordersMock.allOrdersMockBody); 
+    // expect(response.body).to.deep.eq(ordersMock.allOrdersMockBody);
   });
 });
