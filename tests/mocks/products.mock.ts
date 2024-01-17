@@ -30,6 +30,36 @@ const allProductsFromDB = [
     price: "20 peças de ouro",
     orderId: 1
   },
+  {
+    id: 3,
+    name: "Lira de Orfeu",
+    price: "1 peça de ouro",
+    orderId: 2
+  },
+  {
+    id: 4,
+    name: "Armadura de Aquiles",
+    price: "1 peça de ouro",
+    orderId: 2
+  },
+  {
+    id: 5,
+    name: "Harpa de Dagda",
+    price: "15 peças de ouro",
+    orderId: 3
+  }
+]
+
+const allProductsGroupedFromDB = [
+  {
+    productIds: [1, 2]
+  },
+  {
+    productIds: [3, 4]
+  },
+  {
+    productIds: [5]
+  }
 ]
 
 export default {
@@ -37,4 +67,5 @@ export default {
   validProductFromDB,
   validProductFromService,
   allProductsFromDB,
+  allProductsGroupedFromDB
 }
